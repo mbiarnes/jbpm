@@ -136,8 +136,8 @@
     
     <!-- needed for jdk 11 -->
     <dependency>
-      <groupId>jakarta.bind</groupId>
-      <artifactId>jakarta.bind.xml-api</artifactId>
+      <groupId>org.jboss.spec.javax.xml.bind</groupId>
+      <artifactId>jboss-jaxb-api_2.3_spec</artifactId>
     </dependency>
 
     <dependency>
