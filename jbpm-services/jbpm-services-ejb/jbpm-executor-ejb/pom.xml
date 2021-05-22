@@ -115,11 +115,15 @@
       <artifactId>weld-se-core</artifactId>
       <scope>test</scope>
       <exclusions>
-         <!-- collides with javax.enterprise:cdi-api:jar:2.0.SP1:compile -->
-         <exclusion>
-           <groupId>jakarta.enterprise</groupId>
-           <artifactId>jakarta.enterprise.cdi-api</artifactId>
-         </exclusion>
+        <!-- collides with javax.enterprise:cdi-api:jar:2.0.SP1:compile -->
+        <exclusion>
+          <groupId>jakarta.enterprise</groupId>
+          <artifactId>jakarta.enterprise.cdi-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.jboss.spec.javax.el</groupId>
+          <artifactId>jboss-el-api_3.0_spec</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -151,7 +155,12 @@
     <dependency>
       <groupId>org.jbpm</groupId>
       <artifactId>jbpm-persistence-jpa</artifactId>
-      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.transaction</groupId>
+          <artifactId>javax.transaction-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
 
@@ -198,6 +207,12 @@
       <groupId>org.jbpm</groupId>
       <artifactId>jbpm-audit</artifactId>
       <optional>true</optional>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.transaction</groupId>
+          <artifactId>javax.transaction-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 

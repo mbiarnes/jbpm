@@ -46,6 +46,12 @@
       <artifactId>jbpm-runtime-manager</artifactId>
       <optional>true</optional>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.transaction</groupId>
+          <artifactId>javax.transaction-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
      <dependency>
       <groupId>org.freemarker</groupId>
