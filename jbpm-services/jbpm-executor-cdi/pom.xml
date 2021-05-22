@@ -46,6 +46,12 @@
       <groupId>org.jbpm</groupId>
       <artifactId>jbpm-runtime-manager</artifactId>
       <optional>true</optional>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.transaction</groupId>
+          <artifactId>javax.transaction-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.jbpm</groupId>
@@ -115,6 +121,10 @@
       <artifactId>weld-se-core</artifactId>
       <scope>test</scope>
       <exclusions>
+        <exclusion>
+          <groupId>org.jboss.spec.javax.el</groupId>
+          <artifactId>jboss-el-api_3.0_spec</artifactId>
+        </exclusion>
         <!-- collides with javax.enterprise:cdi-api:jar:2.0.SP1:compile -->
         <exclusion>
           <groupId>jakarta.enterprise</groupId>
@@ -193,6 +203,12 @@
       <groupId>org.jbpm</groupId>
       <artifactId>jbpm-audit</artifactId>
       <optional>true</optional>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.transaction</groupId>
+          <artifactId>javax.transaction-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
