@@ -40,10 +40,22 @@
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>drools-persistence-api</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>jakarta.transaction</groupId>
+          <artifactId>jakarta.transaction-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>drools-persistence-jpa</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>jakarta.transaction</groupId>
+          <artifactId>jakarta.transaction-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.jbpm</groupId>
