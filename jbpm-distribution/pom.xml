@@ -32,6 +32,7 @@
             <configuration>
               <reportOutputDirectory>${project.build.directory}/aggregated-javadocs</reportOutputDirectory>
               <includeDependencySources>true</includeDependencySources>
+              <failOnError>false</failOnError>
               <dependencySourceIncludes>
                 <dependencySourceInclude>org.jbpm:*</dependencySourceInclude>
                 <dependencySourceInclude>org.kie:kie-api</dependencySourceInclude>
