@@ -350,8 +350,8 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>javax.activation</groupId>
-          <artifactId>activation</artifactId>
+          <groupId>jakarta.activation</groupId>
+          <artifactId>jakarta.activation-api</artifactId>
         </dependency>
       </dependencies>
     </profile>
