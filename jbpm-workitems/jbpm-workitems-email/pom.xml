@@ -30,10 +30,6 @@
           <artifactId>activation</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>javax.activation</groupId>
-      <artifactId>activation</artifactId>
     </dependency>    
     <dependency>
       <groupId>org.jbpm</groupId>
@@ -68,6 +64,12 @@
       <groupId>org.subethamail</groupId>
       <artifactId>subethasmtp</artifactId>
       <scope>test</scope>
+      <exclusions>
+          <exclusion>
+              <groupId>javax.activation</groupId>
+              <artifactId>activation</artifactId>
+          </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
